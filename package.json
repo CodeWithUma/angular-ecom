@@ -23,7 +23,7 @@
     "@fortawesome/angular-fontawesome": "^0.15.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@ng-bootstrap/ng-bootstrap": "^15.1.2",
+    "@ng-bootstrap/ng-bootstrap": "^17.0.1",
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.2.0",
     "rxjs": "~7.5.0",
