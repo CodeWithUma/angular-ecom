@@ -14,11 +14,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.product.popularProducts().subscribe((data)=>{
-      this.popularProducts=data;
+      this.popularProducts = data;
     })
 
     this.product.trendyProducts().subscribe((data)=>{
-      this.trendyProducts=data;
+      this.trendyProducts = data;
     })
   }
 }
