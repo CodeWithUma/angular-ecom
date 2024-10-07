@@ -42,7 +42,7 @@
         <!-- User Menu -->
         <ng-container *ngSwitchCase="'user'">
           <li class="nav-item">
-            <a class="nav-link" routerLink="seller-auth">Seller</a>
+            <a class="nav-link" routerLink="seller-auth">Seller Logout1</a>
           </li>
           <li class="nav-item"><a class="nav-link" routerLink="">Home</a></li>
           <li class="nav-item">
@@ -68,7 +68,7 @@
             <a class="nav-link" routerLink="seller-home">List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" (click)="logout()">Logout</a>
+            <a class="nav-link" (click)="logout()">Seller Logout</a> <!-- Add Logout for seller -->
           </li>
           <li class="nav-item">
             <a class="nav-link">{{ sellerName | titlecase }}</a>
