@@ -1,4 +1,7 @@
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import {
+  provideHttpClient,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,25 +24,31 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 
-@NgModule({ declarations: [
-        AppComponent,
-        HeaderComponent,
-        HomeComponent,
-        SellerAuthComponent,
-        SellerHomeComponent,
-        SellerAddProductComponent,
-        SellerUpdateProductComponent,
-        FooterComponent,
-        SearchComponent,
-        ProductDetailsComponent,
-        UserAuthComponent,
-        CartPageComponent,
-        CheckoutComponent,
-        MyOrdersComponent
-    ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
-        AppRoutingModule,
-        FormsModule,
-        FontAwesomeModule,
-        NgbModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
-export class AppModule { }
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    SellerAuthComponent,
+    SellerHomeComponent,
+    SellerAddProductComponent,
+    SellerUpdateProductComponent,
+    FooterComponent,
+    SearchComponent,
+    ProductDetailsComponent,
+    UserAuthComponent,
+    CartPageComponent,
+    CheckoutComponent,
+    MyOrdersComponent,
+  ],
+  bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    FontAwesomeModule,
+    NgbModule,
+  ],
+  providers: [provideHttpClient(withInterceptorsFromDi())],
+})
+export class AppModule {}
