@@ -11,6 +11,7 @@ export class SellerService {
   isLoginError= new EventEmitter<boolean>(false)
 
   constructor(private http:HttpClient, private router:Router) { }
+  
   userSignUp(data:signUp){
     this.http.post('http://localhost:3000/seller',
     data,
@@ -21,13 +22,15 @@ export class SellerService {
         this.router.navigate(['seller-home'])
       }
     })
-  } 
+  }
+
   reloadSeller(){
     if(localStorage.getItem('seller')){
       this.isSellerLoggedIn.next(true)
       this.router.navigate(['seller-home'])
     }
   }
+
   userLogin(data:login){
    this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
    {observe:'response'}).subscribe((result:any)=>{
